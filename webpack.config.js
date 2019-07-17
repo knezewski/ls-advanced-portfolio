@@ -12,7 +12,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = (env, argv) => {
   const isProductionBuild = argv.mode === "production";
-  const buildDir = "./docs";
+  const buildDir = "./docs"; //const publicPath = './';
 
   const pcss = {
     test: /\.(p|post|)css$/,
